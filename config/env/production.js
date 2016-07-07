@@ -26,7 +26,7 @@ module.exports = {
    ***************************************************************************/
 
   // port: 80,
-  host: process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1",
+  host: process.env.OPENSHIFT_NODEJS_IP || "127.5.221.1",
   port: process.env.OPENSHIFT_NODEJS_PORT || 8080
 
   /***************************************************************************
