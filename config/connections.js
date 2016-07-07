@@ -47,6 +47,14 @@ module.exports.connections = {
   //   password: 'YOUR_MYSQL_PASSWORD', //optional
   //   database: 'YOUR_MYSQL_DB' //optional
   // },
+  OSnodeMysql: {
+    adapter: 'sails-mysql',
+    host: '127.5.221.2',
+    port: 3306,
+    user: 'adminKIyvV1E', //optional
+    password: 'HlHy1-maS-sQ', //optional
+    database: 'efsnodejs' //optional
+   },
 
   /***************************************************************************
   *                                                                          *
