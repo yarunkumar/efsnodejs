@@ -1,0 +1,23 @@
+<h3>Stocks</h3>
+<table>
+  <tr>
+  <th> Customer ID</th>
+    <th> Stock ID</th>
+    <th>stocksymbol</th>
+    <th>no of shares</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% _.each(stocks, function(stock) { %>
+  <tr data-id="<%= stock.id %>" data-model="stock" >
+    <td><%= stock.owner %></td>
+    <td><%= stock.id %></td>
+    <td><%= stock.symbol %></td>
+    <td><%= stock.number_of_shares %></td>
+    <td><a href="/stock/show/<%= stock.id %>">Show</a></td>
+    <td><a href="/stock/edit/<%= stock.id %>">Edit</a></td>
+    <td><a href="/stock/destroy/<%= stock.id %>">Delete</a></td>
+  </tr>
+  <% }) %>
+</table>
